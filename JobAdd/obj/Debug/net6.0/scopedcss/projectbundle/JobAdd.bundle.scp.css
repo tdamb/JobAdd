@@ -1,0 +1,134 @@
+/* _content/JobAdd/Shared/MainLayout.razor.rz.scp.css */
+.page[b-tk17vszpue] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-tk17vszpue] {
+    flex: 1;
+}
+
+.sidebar[b-tk17vszpue] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-tk17vszpue] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-tk17vszpue]  a, .top-row .btn-link[b-tk17vszpue] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-tk17vszpue] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-tk17vszpue] {
+        display: none;
+    }
+
+    .top-row.auth[b-tk17vszpue] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-tk17vszpue], .top-row .btn-link[b-tk17vszpue] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-tk17vszpue] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-tk17vszpue] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-tk17vszpue] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-tk17vszpue], article[b-tk17vszpue] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/JobAdd/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-ozly80s9pu] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-ozly80s9pu] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-ozly80s9pu] {
+    font-size: 1.1rem;
+}
+
+.oi[b-ozly80s9pu] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-ozly80s9pu] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-ozly80s9pu] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-ozly80s9pu] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-ozly80s9pu]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-ozly80s9pu]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-ozly80s9pu]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-ozly80s9pu] {
+        display: none;
+    }
+
+    .collapse[b-ozly80s9pu] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
